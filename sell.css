@@ -1,0 +1,107 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --main-color: rgb(255, 208, 0);
+    --secondary-color: rgb(255, 255, 255);
+    --color1-text: black;
+    --color2-text: white;
+    --icon-color: tomato;
+}
+
+.container {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid white;
+    background-color: var(--secondary-color);
+    color: var(--color1-text);
+    padding: 32px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    font-size: 24px;
+    color: var(--icon-color);
+}
+
+.title {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 2em;
+
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .5em;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    width: 50vw;
+}
+
+.btn:hover {
+    background-color: var(--icon-color);
+    color: var(--color2-text);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 476px) {
+    .container {
+        background-color: skyblue;
+    }
+    .card {
+        
+    }
+    .title {
+        font-size: 3em;
+    }
+    .icons {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1.5em;
+    }
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        font-size: 150%;
+    }
+}
+    
+}
